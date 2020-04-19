@@ -30,12 +30,32 @@ body #title {
   cursor: pointer;
   font-family: "Roboto" , sans-serif;
   width: 770px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   border: none;
   background: none;
   font-weight: 900;
   font-size: 10rem;
   -webkit-transform: translateY(-28%);
           transform: translateY(-28%);
+  color: #6593f5;
+  overflow-wrap: break-word;
+}
+
+body #title::-webkit-input-placeholder {
+  color: #6593f5;
+}
+
+body #title:-moz-placeholder {
+  color: #6593f5;
+}
+
+body #title::-moz-placeholder {
+  color: #6593f5;
+}
+
+body #title:-ms-input-placeholder {
   color: #6593f5;
 }
 
@@ -208,5 +228,27 @@ body #leader .todo #todos .line {
   border: 1px solid #bdbdbd;
   -webkit-transform: translateX(5%);
           transform: translateX(5%);
+}
+
+@media only screen and (max-width: 1160px) {
+  body #title {
+    font-size: 9rem;
+    -webkit-transform: translateY(5%);
+            transform: translateY(5%);
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  body #title {
+    margin: auto;
+    font-size: 7rem;
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  body #leader {
+    width: 95%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
