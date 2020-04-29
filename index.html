@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="./style/style.css">
-    <title>Todo List</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto:wght@300;400;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./style/style.css" />
+		<title>Todo List</title>
+	</head>
+	<body>
+		<input id="title" placeholder="Stuff To Do" />
+		<section id="leader">
+			<div class="todo">
+				<div id="addTodo">
+					<input
+						id="newTodo"
+						name="todo"
+						type="text"
+						placeholder="Add Todos..."
+					/>
+					<button class="addNew" onclick="addNew()">
+						<img
+							src="https://images.vexels.com/media/users/3/139161/isolated/preview/c76ee72de9a5b980c5f0e0d6b7bac0e0-cross-plus-add-by-vexels.png"
+							alt="add"
+						/>
+					</button>
+				</div>
 
-</head>
-<body>        
-    <input id="title" placeholder="Stuff To Do">
-    <section id="leader">
-        <div class="todo">
-            <div id="addTodo">
-                <input id="newTodo" name="todo"type="text" placeholder="Add Todos...">
-                <button class="addNew" onclick="addNew()">
-                    <img src="https://images.vexels.com/media/users/3/139161/isolated/preview/c76ee72de9a5b980c5f0e0d6b7bac0e0-cross-plus-add-by-vexels.png" alt="add">
-                </button>
-            </div>
+				<div id="todos"></div>
+			</div>
+		</section>
 
-
-            <div id="todos">
-                
-            </div>
-
-        </div>
-    </section>
-
-
-    <script src="./index.js"></script>
-</body>
+		<script src="./index.js"></script>
+	</body>
 </html>
