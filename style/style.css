@@ -28,7 +28,7 @@ body {
 
 body #title {
   cursor: pointer;
-  font-family: "Roboto" , sans-serif;
+  font-family: "Roboto", sans-serif;
   width: 770px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -83,7 +83,7 @@ body #leader .todo #addTodo {
       -ms-flex-direction: row;
           flex-direction: row;
   margin: 18px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body #leader .todo #addTodo #newTodo {
@@ -165,7 +165,7 @@ body #leader .todo #todos .task .checkBox {
 
 body #leader .todo #todos .task .checkBox::before {
   position: absolute;
-  content: '';
+  content: "";
   display: block;
   top: 0px;
   left: 4px;
@@ -249,6 +249,21 @@ body #leader .todo #todos .line {
 @media only screen and (max-width: 769px) {
   body #leader {
     width: 95%;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  body #title {
+    font-size: 6rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  body #title {
+    font-size: 3.5rem;
+  }
+  body #leader {
+    min-width: 350px;
   }
 }
 /*# sourceMappingURL=style.css.map */
