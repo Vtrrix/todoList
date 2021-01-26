@@ -1,0 +1,4 @@
+get todolist    http://127.0.0.1:8000/todo/
+add todo list   http://127.0.0.1:8000/todo/add_task
+check todolist
+delete todolist
