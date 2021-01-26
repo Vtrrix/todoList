@@ -14,20 +14,20 @@
 		<input id="title" placeholder="Stuff To Do" />
 		<section id="leader">
 			<div class="todo">
-				<div id="addTodo">
+				<form id="addTodo">
 					<input
 						id="newTodo"
 						name="todo"
 						type="text"
 						placeholder="Add Todos..."
 					/>
-					<button class="addNew" onclick="addNew()">
+					<button type="submit" class="addNew" onclick="addNew()">
 						<img
 							src="https://images.vexels.com/media/users/3/139161/isolated/preview/c76ee72de9a5b980c5f0e0d6b7bac0e0-cross-plus-add-by-vexels.png"
 							alt="add"
 						/>
 					</button>
-				</div>
+				</form>
 
 				<div id="todos"></div>
 			</div>

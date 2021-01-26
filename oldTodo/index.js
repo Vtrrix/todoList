@@ -41,7 +41,7 @@ function addNew() {
 	let todo = document.getElementById("newTodo").value;
 
 	if (todo) {
-		newTodo = {
+		let newTodo = {
 			title: todo,
 			status: true,
 		};
@@ -80,7 +80,7 @@ let deleteTodo = (index) => {
 //To check and uncheck checkbox next to task
 
 let checkIt = (index) => {
-	cBox = document.getElementsByClassName("checkBox")[index];
+	let cBox = document.getElementsByClassName("checkBox")[index];
 
 	if (cBox.checked) {
 		todoList[index].status = false;
