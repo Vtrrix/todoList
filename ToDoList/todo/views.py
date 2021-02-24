@@ -60,3 +60,14 @@ def del_task(request):
         obj['tasks'].remove(
             obj['tasks'][int(find(obj['tasks'],  request.POST.get('task_id')))])
     return JsonResponse(obj)
+
+
+@csrf_exempt
+def change_check(request):
+    if request.method == "POST":
+        index = int(find(obj['tasks'],  request.POST.get('task_id')))
+        if obj['tasks'][index]["checked"]:
+            obj['tasks'][index]["checked"] = False
+        else:
+            obj['tasks'][index]["checked"] = True
+    return JsonResponse(obj)
